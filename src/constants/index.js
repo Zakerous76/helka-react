@@ -43,7 +43,16 @@ export const navLinks = [
     id: "clients",
     title: "Clients",
   },
+
   // kurumsal, projeler, iştiraklerimiz, media, iletişim
+  {
+    id: "kurumsal",
+    title: "Kurumsal",
+  },
+  {
+    id: "projeler",
+    title: "Projeler",
+  },
 ];
 
 export const features = [
