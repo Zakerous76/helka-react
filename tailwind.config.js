@@ -9,8 +9,10 @@ module.exports = {
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        helkaBgWhite: "F5F5F5",
       },
       fontFamily: {
+        gunterz: ["Gunterz", "sans-serif"], // Add Gunterz here
         poppins: ["Poppins", "sans-serif"],
       },
     },
