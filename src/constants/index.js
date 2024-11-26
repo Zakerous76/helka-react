@@ -24,7 +24,7 @@ import {
   heroSubtitle,
   istiraklerSectionContainers,
   mapIcon,
-} from "../assets";
+} from "../assets/images";
 
 export const navLinks = [
   {
