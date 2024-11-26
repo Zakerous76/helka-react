@@ -1,14 +1,43 @@
-import React from "react";
+import styles from "./styles";
+import {
+  Billing,
+  Business,
+  CardDeal,
+  Clients,
+  CTA,
+  Footer,
+  Navbar,
+  Stats,
+  Testimonials,
+  Hero,
+} from "./components";
 
 const App = () => (
-  <div className="bg-helkaBgWhite w-full overflow-hidden">
-    <h1 className="font-gunterz">Hello World!</h1>
-    <h1 className="font-gunterz font-bold">Bold Gunterz</h1>
-    <h2 className="font-gunterz font-medium">Medium Gunterz</h2>
-    <p className="font-gunterz font-light">Light Gunterz</p>
-    <p className="font-gunterz font-black">Black Gunterz</p>
-    <p className="font-gunterz italic">Italic Gunterz</p>
-    <p className="font-gunterz italic">Bold Italic Gunterz</p>
+  <div className="bg-gradient-to-b  w-full overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
+      </div>
+    </div>
+
+    <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
+      <div className={``}>
+        <Hero />
+      </div>
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Stats />
+        <Business />
+        <Billing />
+        <CardDeal />
+        <Testimonials />
+        <Clients />
+        <CTA />
+        <Footer />
+      </div>
+    </div>
   </div>
 );
 

@@ -24,8 +24,8 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 
-import no0Projects80 from "./helka/0-projects.svg";
-import no8Projects80 from "./helka/8-projects.svg";
+import no0Projects80 from "./helka/0-projects-80.svg";
+import no8Projects80 from "./helka/8-projects-80.svg";
 import constructionIllustration from "./helka/construction-vector-projects-80.svg";
 import footerIllustrations from "./helka/footer-illustrations.png";
 import helkaFooterLogo from "./helka/helka-footer-logo.svg";
