@@ -59,8 +59,8 @@
 
 // export default Navbar;
 import React, { useState } from "react";
-import { navLinks } from "../constants";
-import { close, helkaHeaderLogo, menu } from "../assets/images";
+import { navLinks } from "../../constants";
+import { close, helkaHeaderLogo, menu } from "../../assets/images";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");

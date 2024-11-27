@@ -77,8 +77,8 @@ const Hero = () => {
         />
         {/* For large screens */}
         <div className="hidden sm:flex">
-          <div className="hero-text flex w-full justify-between absolute bottom-[90px] left-0 z-10 align-baseline">
-            <img className="w-1/2" src={heroTitle} alt="Main title" />
+          <div className="hero-text flex w-full justify-between absolute bottom-[60px] left-0 z-10 align-baseline">
+            <img className="w-1/3" src={heroTitle} alt="Main title" />
             <img
               className="w-1/3 pt-28"
               src={heroSubtitle}

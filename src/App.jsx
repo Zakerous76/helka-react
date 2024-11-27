@@ -1,16 +1,7 @@
 import styles from "./styles";
-import {
-  Billing,
-  Business,
-  CardDeal,
-  Clients,
-  CTA,
-  Footer,
-  Navbar,
-  Stats,
-  Testimonials,
-  Hero,
-} from "./components";
+import { Footer, Navbar, Hero } from "./components";
+import ProjectsSection from "./components/ProjectsSection";
+import IstiraklerSection from "./components/IstiraklerSection";
 
 const App = () => (
   <div className="bg-gradient-to-b  w-full overflow-hidden">
@@ -26,17 +17,20 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
-        <Billing />
-        <CardDeal />
-        <Testimonials />
-        <Clients />
-        <CTA />
-        <Footer />
+    <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
+      <div className={``}>
+        <ProjectsSection />
       </div>
+    </div>
+
+    <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
+      <div className={``}>
+        <IstiraklerSection />
+      </div>
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <Footer />
     </div>
   </div>
 );
