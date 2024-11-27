@@ -23,7 +23,7 @@ import {
   heroTitle,
   heroSubtitle,
   istiraklerSectionContainers,
-  mapIcon,
+  mapIllustration,
   igBanner,
   ig1,
   ig2,
@@ -51,6 +51,12 @@ export const navLinks = [
 ];
 
 export const motto = "Geleceğe Yön Veren Projeler";
+
+export const projectsDescription1 =
+  "Her yenİ projeyle yaşam alanlarını dönüştürüyor, yarının şehİrlerİnİ bugünden şekİllendİrİyoruz. <br/> Çünkü BİZ,";
+
+export const projectsDescription2 =
+  "ÜLKEMİZİN DÖRT BİR YANINDA GERÇEKLEŞTİRDİĞİMİZ<br/>PROJELERLE, MODERN ŞEHİRCİLİK ANLAYIŞINI GÜVEN<br/>VE ESTETİKLE BULUŞTURUYORUZ.";
 
 export const footerLinks = [
   {

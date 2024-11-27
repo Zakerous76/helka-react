@@ -34,11 +34,17 @@ import heroBg from "./helka/hero-bg.png";
 import heroTitle from "./helka/hero-title.svg";
 import heroSubtitle from "./helka/hero-subtitle.svg";
 import istiraklerSectionContainers from "./helka/istirakler-section-containers.svg";
-import mapIcon from "./helka/map-icon.png";
+import mapIllustration from "./helka/map-icon.png";
 import igBanner from "./helka/ig-banner.png";
 import ig1 from "./helka/ig-1.png";
 import ig2 from "./helka/ig-2.png";
 import ig3 from "./helka/ig-3.png";
+import slideImgContainer from "./helka/slide-img-container.svg";
+import tamamDevamIcon from "./helka/tamam-devam-icon.svg";
+import tamamIcon from "./helka/tamam-icon.svg";
+import devamIcon from "./helka/devam-icon.svg";
+import tamamProjeIcon from "./helka/tamam-proje-icon.svg";
+import devamProjeIcon from "./helka/devam-proje-icon.svg";
 
 export {
   airbnb,
@@ -76,10 +82,16 @@ export {
   heroTitle,
   heroSubtitle,
   istiraklerSectionContainers,
-  mapIcon,
+  mapIllustration,
   igBanner,
   ig1,
   ig2,
   ig3,
+  slideImgContainer,
+  tamamDevamIcon,
+  tamamIcon,
+  devamIcon,
+  tamamProjeIcon,
+  devamProjeIcon,
   // Add more SVGs here if needed...
 };
