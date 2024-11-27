@@ -75,17 +75,18 @@ const Hero = () => {
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
+        {/* For large screens */}
         <div className="hidden sm:flex">
-          <div className="hero-text flex w-full justify-between absolute bottom-[20px] left-0 z-10 ">
+          <div className="hero-text flex w-full justify-between absolute bottom-[90px] left-0 z-10 align-baseline">
             <img className="w-1/2" src={heroTitle} alt="Main title" />
             <img
-              className="w-1/3"
+              className="w-1/3 pt-28"
               src={heroSubtitle}
               alt="Subtitle: Project Name"
             />
           </div>
         </div>
-
+        {/* For small screens */}
         <div className="sm:hidden">
           <div className="hero-text flex flex-col sm:flex-row w-full justify-between absolute bottom-[90px] left-0 z-10 items-start sm:items-end ">
             <img
@@ -94,7 +95,7 @@ const Hero = () => {
               alt="Main title"
             />
           </div>
-          <div className="hero-text flex flex-col sm:flex-row w-full justify-between absolute bottom-[40px] left-0 z-10 items-end sm:items-end ">
+          <div className="hero-text flex flex-col sm:flex-row w-full justify-between absolute bottom-[50px] left-0 z-10 items-end sm:items-end ">
             <img
               className="w-10/12 sm:w-1/3"
               src={heroSubtitle}
@@ -103,6 +104,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-[15vh] bg-gradient-to-b from-transparent to-white"></div>
     </div>
   );
 };
