@@ -4,7 +4,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import IstiraklerSection from "./components/IstiraklerSection";
 
 const App = () => (
-  <div className="bg-gradient-to-b  w-full overflow-hidden">
+  <div className="bg-gradient-to-b flex flex-col  w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
