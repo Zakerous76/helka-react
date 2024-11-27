@@ -28,6 +28,10 @@ import {
   ig1,
   ig2,
   ig3,
+  helkaInsaatImg,
+  helkaBetonImg,
+  helkaTaahhutImg,
+  helkaMadenImg,
 } from "../assets/images";
 
 export const navLinks = [
@@ -162,91 +166,37 @@ export const socialMedia = [
   },
 ];
 
-// Useless
-export const features = [
+export const istirakler = [
   {
-    id: "feature-1",
-    icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    id: "istirak-1",
+    title: "Helka İnşaat",
+    title_color: "helkaBlue",
+    image: helkaInsaatImg,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eget posuere vulputate, mauris velit condimentum neque, id fermentum risus velit id nunc. Proin vel facilisis nisi. Duis non condimentum odio. Sed nec faucibus ante, vel laoreet neque. Sed vel est non arcu pulvinar rutrum. Quisque vel dui a neque vestibulum consectetur.",
   },
   {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
+    id: "istirak-2",
+    title: "Helka Beton",
+    title_color: "helkaDarkBrown",
+    image: helkaBetonImg,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eget posuere vulputate, mauris velit condimentum neque, id fermentum risus velit id nunc. Proin vel facilisis nisi. Duis non condimentum odio. Sed nec faucibus ante, vel laoreet neque. Sed vel est non arcu pulvinar rutrum. Quisque vel dui a neque vestibulum consectetur.",
   },
   {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
-];
-
-export const feedback = [
-  {
-    id: "feedback-1",
-    content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+    id: "istirak-3",
+    title: "Helka Taahhüt",
+    title_color: "helkaOrange",
+    image: helkaTaahhutImg,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eget posuere vulputate, mauris velit condimentum neque, id fermentum risus velit id nunc. Proin vel facilisis nisi. Duis non condimentum odio. Sed nec faucibus ante, vel laoreet neque. Sed vel est non arcu pulvinar rutrum. Quisque vel dui a neque vestibulum consectetur.",
   },
   {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
-  },
-  {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
-  },
-];
-
-export const stats = [
-  {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
-  },
-  {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
+    id: "istirak-4",
+    title: "Helka Maden",
+    title_color: "helkaPastelGreen",
+    image: helkaMadenImg,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eget posuere vulputate, mauris velit condimentum neque, id fermentum risus velit id nunc. Proin vel facilisis nisi. Duis non condimentum odio. Sed nec faucibus ante, vel laoreet neque. Sed vel est non arcu pulvinar rutrum. Quisque vel dui a neque vestibulum consectetur.",
   },
 ];

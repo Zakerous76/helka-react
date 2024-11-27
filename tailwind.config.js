@@ -14,6 +14,8 @@ module.exports = {
         helkaBlue: "#5699B1",
         helkaBrown: "#906E50",
         helkaOrange: "#D65F32",
+        helkaDarkBrown: "#4E4F4E",
+        helkaPastelGreen: "#929E8C",
       },
       fontFamily: {
         gunterz: ["Gunterz", "sans-serif"], // Add Gunterz here

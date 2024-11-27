@@ -30,11 +30,11 @@ import constructionIllustration from "./helka/construction-vector-projects-80.sv
 import footerIllustrations from "./helka/footer-illustrations.png";
 import helkaFooterLogo from "./helka/helka-footer-logo.svg";
 import helkaHeaderLogo from "./helka/helka-header-logo.svg";
-import heroBg from "./helka/hero-bg.png";
+import heroBg from "./helka/hero-bg.webp";
 import heroTitle from "./helka/hero-title.svg";
 import heroSubtitle from "./helka/hero-subtitle.svg";
 import istiraklerSectionContainers from "./helka/istirakler-section-containers.svg";
-import mapIllustration from "./helka/map-icon.png";
+import mapIllustration from "./helka/map-icon.webp";
 import igBanner from "./helka/ig-banner.png";
 import ig1 from "./helka/ig-1.png";
 import ig2 from "./helka/ig-2.png";
@@ -45,6 +45,10 @@ import tamamIcon from "./helka/tamam-icon.svg";
 import devamIcon from "./helka/devam-icon.svg";
 import tamamProjeIcon from "./helka/tamam-proje-icon.svg";
 import devamProjeIcon from "./helka/devam-proje-icon.svg";
+import helkaTaahhutImg from "./helka/helka-taahhut.webp";
+import helkaMadenImg from "./helka/helka-maden.webp";
+import helkaInsaatImg from "./helka/helka-insaat.webp";
+import helkaBetonImg from "./helka/helka-beton.webp";
 
 export {
   airbnb,
@@ -93,5 +97,9 @@ export {
   devamIcon,
   tamamProjeIcon,
   devamProjeIcon,
+  helkaTaahhutImg,
+  helkaMadenImg,
+  helkaInsaatImg,
+  helkaBetonImg,
   // Add more SVGs here if needed...
 };
