@@ -35,6 +35,10 @@ import heroTitle from "./helka/hero-title.svg";
 import heroSubtitle from "./helka/hero-subtitle.svg";
 import istiraklerSectionContainers from "./helka/istirakler-section-containers.svg";
 import mapIcon from "./helka/map-icon.png";
+import igBanner from "./helka/ig-banner.png";
+import ig1 from "./helka/ig-1.png";
+import ig2 from "./helka/ig-2.png";
+import ig3 from "./helka/ig-3.png";
 
 export {
   airbnb,
@@ -73,5 +77,9 @@ export {
   heroSubtitle,
   istiraklerSectionContainers,
   mapIcon,
+  igBanner,
+  ig1,
+  ig2,
+  ig3,
   // Add more SVGs here if needed...
 };

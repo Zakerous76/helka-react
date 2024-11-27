@@ -29,7 +29,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`bg-footerBg ${styles.flexCenter}`}>
       <Footer />
     </div>
   </div>

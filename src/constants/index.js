@@ -24,6 +24,10 @@ import {
   heroSubtitle,
   istiraklerSectionContainers,
   mapIcon,
+  igBanner,
+  ig1,
+  ig2,
+  ig3,
 } from "../assets/images";
 
 export const navLinks = [
@@ -45,6 +49,8 @@ export const navLinks = [
     title: "Medya",
   },
 ];
+
+export const motto = "Geleceğe Yön Veren Projeler";
 
 export const footerLinks = [
   {
@@ -96,6 +102,34 @@ export const footerLinks = [
     title: "Medya",
     title_link: "/medya/",
     links: [],
+  },
+];
+
+export const ig_posts = [
+  {
+    id: "ig-post-1",
+    image: ig1,
+    caption: "Project Name: XYZ",
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: "ig-banner",
+    image: igBanner,
+    caption: "Project Name: WXYZ",
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: "ig-post-2",
+    image: ig2,
+    caption: "Project Name: ABC",
+    link: "https://www.instagram.com/",
+  },
+
+  {
+    id: "ig-post-3",
+    image: ig3,
+    caption: "Project Name: PQR",
+    link: "https://www.instagram.com/",
   },
 ];
 

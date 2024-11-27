@@ -10,6 +10,9 @@ module.exports = {
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         helkaBgWhite: "F5F5F5",
+        footerBg: "#363636",
+        helkaBlue: "#5699B1",
+        helkaBrown: "#906E50",
       },
       fontFamily: {
         gunterz: ["Gunterz", "sans-serif"], // Add Gunterz here
