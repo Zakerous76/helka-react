@@ -68,20 +68,39 @@ import { heroBg, heroSubtitle, heroTitle } from "../assets/images";
 
 const Hero = () => {
   return (
-    <div className="w-full relative">
-      <div>
+    <div className="w-full relative h-screen">
+      <div className="relative w-full h-full">
         <img
           src={heroBg}
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
-        <div className="hero-text flex w-full justify-between absolute bottom-[20px] left-0 z-10 ">
-          <img className="w-1/3" src={heroTitle} alt="Main title" />
-          <img
-            className="w-1/3"
-            src={heroSubtitle}
-            alt="Subtitle: Project Name"
-          />
+        <div className="hidden sm:flex">
+          <div className="hero-text flex w-full justify-between absolute bottom-[20px] left-0 z-10 ">
+            <img className="w-1/2" src={heroTitle} alt="Main title" />
+            <img
+              className="w-1/3"
+              src={heroSubtitle}
+              alt="Subtitle: Project Name"
+            />
+          </div>
+        </div>
+
+        <div className="sm:hidden">
+          <div className="hero-text flex flex-col sm:flex-row w-full justify-between absolute bottom-[90px] left-0 z-10 items-start sm:items-end ">
+            <img
+              className="w-10/12 sm:w-1/3"
+              src={heroTitle}
+              alt="Main title"
+            />
+          </div>
+          <div className="hero-text flex flex-col sm:flex-row w-full justify-between absolute bottom-[40px] left-0 z-10 items-end sm:items-end ">
+            <img
+              className="w-10/12 sm:w-1/3"
+              src={heroSubtitle}
+              alt="Subtitle: Project Name"
+            />
+          </div>
         </div>
       </div>
     </div>
