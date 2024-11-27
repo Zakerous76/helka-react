@@ -4,15 +4,15 @@ import { footerLinks, ig_posts, motto, socialMedia } from "../constants";
 
 const Footer = () => (
   <section
-    className={`footer relative flex pb-16 flex-row w-full ${styles.paddingX} sm:pl-0 pl-0 `}
+    className={`footer relative flex pb-16 flex-col sm:flex-row w-full sm:px-16 pl-0 items-center`}
   >
     {/* Background Illustration */}
-    <div className={`absolute bottom-0 left-0 w-full z-0`}>
+    <div className={`absolute bottom-0 left-0 w-full z-0 `}>
       <img src={footerIllustrations} alt="Footer Background Illustrations" />
     </div>
 
     {/* Helka Logo to the left */}
-    <div className="flex w-5/12 h-full justify-start">
+    <div className="hidden sm:flex w-5/12 h-[450px] justify-start pr-7">
       <img
         src={helkaFooterLogo}
         alt="Helka"
@@ -21,9 +21,9 @@ const Footer = () => (
     </div>
 
     {/* The rest on the right */}
-    <div className="pl-8 my-auto flex flex-col w-7/12 pr-20 z-10">
+    <div className="my-auto flex flex-col w-full sm:w-7/12 max-w-[660px] px-4 sm:pl-8 sm:pr-20 z-10">
       <div className="title">
-        <h1 className="text-white font-poppins capitalize font-semibold text-3xl pb-6 ">
+        <h1 className="text-white font-poppins capitalize font-bold text-4xl py-6 ">
           {motto}
         </h1>
         <div
@@ -31,14 +31,14 @@ const Footer = () => (
         />
       </div>
 
-      <div className="flex justify-center">
-        <div className="grid grid-cols-2 gap-4 md:mt-0 mt-10 mr-auto">
+      <div className="flex justify-center flex-col sm:flex-row">
+        <div className="flex flex-row flex-wrap mr-auto justify-evenly sm:justify-normal">
           {footerLinks.map((footerlink) => (
             <div
               key={footerlink.title}
               className={`flex flex-col ss:my-0 my-4 min-w-[125px]`}
             >
-              <h4 className="font-poppins font-semibold text-xs text-white">
+              <h4 className="font-poppins font-semibold text-sm text-white">
                 <a
                   href={footerlink.title_link}
                   className="hover:font-bold transition-all"
@@ -63,9 +63,9 @@ const Footer = () => (
             </div>
           ))}
         </div>
-        <div className="ig-posts">
+        <div className="ig-posts flex flex-col sm:flex-none items-center sm:items-baseline border-t-2 border-dashed border-gray-500 sm:border-none pt-4 sm:pt-0">
           <h3 className="font-poppins font-semibold text-sm text-white">
-            Instagram Posts
+            Instagram
           </h3>
 
           {/* Add Instagram Post Images */}
@@ -85,10 +85,19 @@ const Footer = () => (
       </div>
     </div>
 
+    {/* Helka Logo to the left */}
+    <div className="sm:hidden flex w-full h-full justify-start pr-7 mb-4">
+      <img
+        src={helkaFooterLogo}
+        alt="Helka"
+        className="w-full object-contain"
+      />
+    </div>
+
     <div
-      className={`bg-helkaBlue absolute bottom-0 left-0 w-full flex justify-between items-center md:flex-row flex-col border-t-[1px] border-t-[#3F3E45] py-5 ${styles.paddingX}`}
+      className={`bg-helkaBlue absolute bottom-0 left-0 w-full flex flex-col sm:flex-row justify-between items-center py-5 ${styles.paddingX}`}
     >
-      <p className="font-poppins font-normal text-center text-sm text-white">
+      <p className="font-poppins font-normal text-center text-xs text-white mb-4 sm:mb-0">
         Copyright Ⓒ 2024 by{" "}
         <a
           href="google.com"
@@ -99,13 +108,13 @@ const Footer = () => (
         All Rights Reserved.
       </p>
 
-      <div className="flex flex-row md:mt-0 mt-6">
+      <div className="flex flex-row *:mt-0 ">
         {socialMedia.map((social, index) => (
           <img
             key={social.id}
             src={social.icon}
             alt={social.id}
-            className={`w-[21px] h-[21px] object-contain cursor-pointer hover:scale-125 my-transition ${
+            className={`w-[18px] h-[18px] object-contain cursor-pointer hover:scale-125 my-transition ${
               index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
             }`}
             onClick={() => window.open(social.link)}
