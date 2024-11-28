@@ -8,7 +8,7 @@ const IstiraklerSection = () => {
       <div className="white-bg bg-white rounded-[90px] min-h-72 px-24 mx-32 shadow-xl flex flex-col justify-center items-center mb-40">
         <div className="background-grid relative pb-16">
           <h1 className="title font-gunterz font-bold text-7xl text-helkaDarkBrown p-16 relative">
-            İştirakerlimiz
+            İŞTİRAKLERİMİZ
           </h1>
           <img src={istiraklerSectionContainers} alt="" />
           <div className="texts-images flex flex-col absolute top-[200px]">

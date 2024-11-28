@@ -32,6 +32,8 @@ import {
   helkaBetonImg,
   helkaTaahhutImg,
   helkaMadenImg,
+  slide1,
+  slide2,
 } from "../assets/images";
 
 export const navLinks = [
@@ -198,5 +200,28 @@ export const istirakler = [
     image: helkaMadenImg,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eget posuere vulputate, mauris velit condimentum neque, id fermentum risus velit id nunc. Proin vel facilisis nisi. Duis non condimentum odio. Sed nec faucibus ante, vel laoreet neque. Sed vel est non arcu pulvinar rutrum. Quisque vel dui a neque vestibulum consectetur.",
+  },
+];
+
+export const projectsSliderImages = [
+  {
+    src: slide1,
+    alt: "Project 1",
+    title: "UZUNER HQ",
+  },
+  {
+    src: slide2,
+    alt: "Project 2",
+    title: "HELKA BİNA",
+  },
+  {
+    src: slide1,
+    alt: "Project 1",
+    title: "UZUNER HQ",
+  },
+  {
+    src: slide2,
+    alt: "Project 2",
+    title: "HELKA BİNA",
   },
 ];

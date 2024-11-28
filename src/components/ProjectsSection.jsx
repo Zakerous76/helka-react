@@ -7,7 +7,12 @@ import {
   slideImgContainer,
   tamamDevamIcon,
 } from "../assets/images";
-import { projectsDescription1, projectsDescription2 } from "../constants";
+import {
+  projectsDescription1,
+  projectsDescription2,
+  projectsSliderImages,
+} from "../constants";
+import ImageSlider from "./ImageSlider";
 
 const ProjectsSection = () => {
   return (
@@ -16,7 +21,7 @@ const ProjectsSection = () => {
       <div className="no80 flex relative flex-row flex-nowrap w-full sm:w-11/12 rounded-md overflow-hidden top-[-30px]">
         <div className="no8 relative ml-24 ">
           <img src={no8Projects80} alt="Number 8 of 80" className="" />
-          <span className="top-text absolute font-gunterz top-[15px] left-[15px] sm:top-[15px] lg:top-[30px] sm:left-[30px] lg:left-[40px] text-[16px] sm:text-[24px] lg:text-[46px] text-white">
+          <span className="top-text absolute font-gunterz text-white top-[15px] left-[15px] sm:top-[15px] sm:left-[30px] lg:top-[30px] lg:left-[40px] text-[16px] sm:text-[24px] lg:text-[40px]">
             BUGÜNE KADAR
           </span>
           <img
@@ -41,8 +46,9 @@ const ProjectsSection = () => {
       </div>
 
       {/* TODO: Do Later */}
-      <div className="image-slider w-[340px] xs:w-10/12">
-        <img src={slideImgContainer} alt="Slider Background" />
+      <div className="image-slider w-[340px] xs:w-2/3">
+        {/* <img src={slideImgContainer} alt="Slider Background" /> */}
+        <ImageSlider projectsSliderImages={projectsSliderImages} />
       </div>
 
       {/*  */}
