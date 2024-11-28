@@ -48,7 +48,7 @@ const Footer = () => (
               </h4>
               <ul className="list-none mt-4">
                 {footerlink.links.map((link, index) => (
-                  <a href={link.link}>
+                  <a href={link.link} key={link.name}>
                     <li
                       key={link.name}
                       className={`font-poppins font-light text-[11px] text-gray-400 hover:font-bold cursor-pointer transition-all ${
@@ -71,7 +71,7 @@ const Footer = () => (
           {/* Add Instagram Post Images */}
           <div className="posts-container grid grid-cols-2 gap-2 pt-3 w-56">
             {ig_posts.map((post, index) => (
-              <a href={post.link} target="_blank">
+              <a href={post.link} target="_blank" key={post.id}>
                 <img
                   key={index}
                   src={post.image}
