@@ -36,6 +36,14 @@ import {
   slide2,
 } from "../assets/images";
 
+export const motto = "Geleceğe Yön Veren Projeler";
+
+export const projectsDescription1 =
+  "Her yenİ projeyle yaşam alanlarını dönüştürüyor, yarının şehİrlerİnİ bugünden şekİllendİrİyoruz. <br/> Çünkü BİZ,";
+
+export const projectsDescription2 =
+  "ÜLKEMİZİN DÖRT BİR YANINDA GERÇEKLEŞTİRDİĞİMİZ<br/>PROJELERLE, MODERN ŞEHİRCİLİK ANLAYIŞINI GÜVEN<br/>VE ESTETİKLE BULUŞTURUYORUZ.";
+
 export const navLinks = [
   // kurumsal, projeler, iştiraklerimiz, media, iletişim
   {
@@ -55,14 +63,6 @@ export const navLinks = [
     title: "Medya",
   },
 ];
-
-export const motto = "Geleceğe Yön Veren Projeler";
-
-export const projectsDescription1 =
-  "Her yenİ projeyle yaşam alanlarını dönüştürüyor, yarının şehİrlerİnİ bugünden şekİllendİrİyoruz. <br/> Çünkü BİZ,";
-
-export const projectsDescription2 =
-  "ÜLKEMİZİN DÖRT BİR YANINDA GERÇEKLEŞTİRDİĞİMİZ<br/>PROJELERLE, MODERN ŞEHİRCİLİK ANLAYIŞINI GÜVEN<br/>VE ESTETİKLE BULUŞTURUYORUZ.";
 
 export const footerLinks = [
   {

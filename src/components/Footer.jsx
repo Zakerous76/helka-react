@@ -4,7 +4,7 @@ import { footerLinks, ig_posts, motto, socialMedia } from "../constants";
 
 const Footer = () => (
   <section
-    className={`footer relative flex pb-16 flex-col sm:flex-row w-full sm:px-16 pl-0 items-center`}
+    className={`footer relative flex pb-16 flex-col sm:flex-row w-full sm:px-16 pl-0 items-center bg-footerBg `}
   >
     {/* Background Illustration */}
     <div className={`absolute bottom-0 left-0 w-full z-0 `}>

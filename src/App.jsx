@@ -4,29 +4,21 @@ import ProjectsSection from "./components/ProjectsSection";
 import IstiraklerSection from "./components/IstiraklerSection";
 
 const App = () => (
-  <div className="bg-gradient-to-b flex flex-col  w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
+  <div className="bg-helkaBgWhite flex flex-col  w-full overflow-hidden">
+    <div className={`${styles.paddingX}`}>
+      <Navbar />
+    </div>
+
+    <div className={`${styles.flexCenter} w-full`}>
+      <Hero />
+    </div>
+
+    <div className={`${styles.flexCenter} w-full`}>
+      <ProjectsSection />
     </div>
 
     <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
-      <div className={``}>
-        <Hero />
-      </div>
-    </div>
-
-    <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
-      <div className={``}>
-        <ProjectsSection />
-      </div>
-    </div>
-
-    <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
-      <div className={``}>
-        <IstiraklerSection />
-      </div>
+      <IstiraklerSection />
     </div>
 
     <div className={`bg-footerBg ${styles.flexCenter}`}>
