@@ -49,6 +49,8 @@ import helkaTaahhutImg from "./helka/helka-taahhut.webp";
 import helkaMadenImg from "./helka/helka-maden.webp";
 import helkaInsaatImg from "./helka/helka-insaat.webp";
 import helkaBetonImg from "./helka/helka-beton.webp";
+import slide1 from "./helka/slide-1.jpg";
+import slide2 from "./helka/slide-2.jpg";
 
 export {
   airbnb,
@@ -101,5 +103,7 @@ export {
   helkaMadenImg,
   helkaInsaatImg,
   helkaBetonImg,
+  slide1,
+  slide2,
   // Add more SVGs here if needed...
 };
