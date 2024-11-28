@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { projectsSliderImages } from "../constants";
 
-export default function ImageSlider() {
+export default function ImageSlider({ projectsSliderImages }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [direction, setDirection] = useState(""); // Track slide direction
@@ -39,7 +38,7 @@ export default function ImageSlider() {
   }, [isAutoPlaying, nextSlide]);
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white rounded-[36px] shadow-md overflow-hidden">
+    <div className="w-full max-w-4xl mx-auto bg-white rounded-[36px] shadow-md overflow-hidden ">
       <div
         className="relative"
         onMouseEnter={pauseAutoPlay}
@@ -53,7 +52,7 @@ export default function ImageSlider() {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className={`absolute w-full h-full object-cover ${
+                className={`absolute w-full h-full object-cover${
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 } transition-opacity duration-700`}
               />
