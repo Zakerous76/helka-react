@@ -11,12 +11,12 @@ import { projectsDescription1, projectsDescription2 } from "../constants";
 
 const ProjectsSection = () => {
   return (
-    <div className="projects-section flex flex-col px-14 items-center">
+    <div className="projects-section flex flex-col relative px-14 items-center">
       {/*  */}
-      <div className="no80 flex flex-row flex-nowrap w-11/12 rounded-md">
-        <div className="no8 relative ml-24">
-          <img src={no8Projects80} alt="Number 8 of 80" />
-          <span className="top-text absolute top-10 left-14 font-gunterz text-5xl text-white">
+      <div className="no80 flex relative flex-row flex-nowrap w-full sm:w-11/12 rounded-md overflow-hidden top-[-30px]">
+        <div className="no8 relative ml-24 ">
+          <img src={no8Projects80} alt="Number 8 of 80" className="" />
+          <span className="top-text absolute font-gunterz top-[15px] left-[15px] sm:top-[15px] lg:top-[30px] sm:left-[30px] lg:left-[40px] text-[16px] sm:text-[24px] lg:text-[46px] text-white">
             BUGÜNE KADAR
           </span>
           <img
@@ -27,21 +27,21 @@ const ProjectsSection = () => {
         </div>
         <div className="no0 relative right-24 top-0">
           <img src={no0Projects80} alt="Number 0 of 80" className="" />
-          <span className="top-text absolute bottom-4 right-14 font-gunterz text-4xl text-white">
+          <span className="top-text absolute font-gunterz bottom-[10px] right-[16px] sm:right-[30px] lg:right-[40px] sm:text-[16px] lg:text-[32px] text-white">
             'DEN FAZLA PROJE
           </span>
         </div>
       </div>
 
       {/*  */}
-      <div className="descriptions-1 mx-auto w-2/3 font-gunterz text-footerBg font-thin text-[30px] leading-[45px] text-center my-16">
+      <div className="descriptions-1 mx-auto w-2/3 font-gunterz text-footerBg font-thin text-[30px] leading-[45px] text-center my-10">
         <p dangerouslySetInnerHTML={{ __html: projectsDescription1 }} />
         <br />
         <span className="text-5xl">HİKAYENİZİ GELEÇEĞE TAŞIYORUZ</span>
       </div>
 
       {/* TODO: Do Later */}
-      <div className="image-slider">
+      <div className="image-slider w-[340px] xs:w-10/12">
         <img src={slideImgContainer} alt="Slider Background" />
       </div>
 
