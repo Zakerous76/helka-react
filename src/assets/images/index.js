@@ -26,7 +26,7 @@ import people03 from "./people03.png";
 
 import no0Projects80 from "./helka/0-projects-80.svg";
 import no8Projects80 from "./helka/8-projects-80.svg";
-import constructionIllustration from "./helka/construction-vector-projects-80.svg";
+import constructionIllustration from "./helka/construction-vector-projects-80.png";
 import footerIllustrations from "./helka/footer-illustrations.png";
 import helkaFooterLogo from "./helka/helka-footer-logo.svg";
 import helkaHeaderLogo from "./helka/helka-header-logo.svg";
@@ -62,7 +62,7 @@ import hakkimizdaImg1 from "./helka/hakkimizda-img-1.png";
 import hakkimizdaImg2 from "./helka/hakkimizda-img-2.png";
 
 // İştiraklerimiz
-import istiraklerimizHeroBg from "./helka/istiraklerimiz-hero-bg.png";
+import istiraklerimizHeroBg from "./helka/istiraklerimiz-hero-bg.jpg";
 import istiraklerimizHeroTitle from "./helka/istiraklerimiz-hero-title.svg";
 import istiraklerimizHeroSubtitle from "./helka/istiraklerimiz-hero-subtitle.svg";
 
