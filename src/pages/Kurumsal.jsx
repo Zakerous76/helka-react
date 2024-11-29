@@ -30,10 +30,12 @@ const Kurumsal = () => {
               key={content.id}
               className={`flex flex-row ${
                 index % 2 === 0 ? "text-right" : "flex-row-reverse"
-              } gap-5 items-center`}
+              } gap-7 items-center`}
             >
               <div className="text w-1/2">
-                <h2 className=" font-semibold text-lg mb-2">{content.title}</h2>
+                <h2 className=" font-semibold text-[14px] mb-2">
+                  {content.title}
+                </h2>
                 <p className="text-black font-poppins">{content.text}</p>
               </div>
               <div className="image w-1/2">
