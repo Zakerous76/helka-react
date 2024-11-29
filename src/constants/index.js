@@ -47,20 +47,34 @@ export const projectsDescription2 =
 export const navLinks = [
   // kurumsal, projeler, iştiraklerimiz, media, iletişim
   {
+    id: "anasayfa",
+    title: "Anasayfa",
+    link: "/",
+  },
+  {
     id: "kurumsal",
     title: "Kurumsal",
+    link: "kurumsal/",
   },
   {
     id: "projeler",
     title: "Projeler",
+    link: "projeler/",
   },
   {
     id: "istiraklerimiz",
     title: "İştiraklerimiz",
+    link: "istiraklerimiz/",
   },
   {
     id: "medya",
     title: "Medya",
+    link: "medya/",
+  },
+  {
+    id: "iletisim",
+    title: "İLETİŞİM",
+    link: "iletisim/",
   },
 ];
 

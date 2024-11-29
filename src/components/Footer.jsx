@@ -1,6 +1,7 @@
 import styles from "../styles";
 import { footerIllustrations, helkaFooterLogo } from "../assets/images";
 import { footerLinks, ig_posts, motto, socialMedia } from "../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <section
@@ -33,31 +34,29 @@ const Footer = () => (
 
       <div className="flex justify-center flex-col sm:flex-row">
         <div className="flex flex-row flex-wrap mr-auto justify-evenly sm:justify-normal">
-          {footerLinks.map((footerlink) => (
+          {footerLinks.map((footerlink, index) => (
             <div
-              key={footerlink.title}
+              key={index}
               className={`flex flex-col ss:my-0 my-4 min-w-[125px]`}
             >
               <h4 className="font-poppins font-semibold text-sm text-white">
-                <a
-                  href={footerlink.title_link}
+                <Link
+                  to={footerlink.title_link}
                   className="hover:font-bold transition-all"
                 >
                   {footerlink.title}
-                </a>
+                </Link>
               </h4>
               <ul className="list-none mt-4">
                 {footerlink.links.map((link, index) => (
-                  <a href={link.link} key={link.name}>
-                    <li
-                      key={link.name}
-                      className={`font-poppins font-light text-[11px] text-gray-400 hover:font-bold cursor-pointer transition-all ${
-                        index !== footerlink.links.length - 1 ? "mb-2" : "mb-0"
-                      }`}
-                    >
-                      {link.name}
-                    </li>
-                  </a>
+                  <li
+                    key={index}
+                    className={`font-poppins font-light text-[11px] text-gray-400 hover:font-bold cursor-pointer transition-all ${
+                      index !== footerlink.links.length - 1 ? "mb-2" : "mb-0"
+                    }`}
+                  >
+                    <Link to={link.link}>{link.name}</Link>
+                  </li>
                 ))}
               </ul>
             </div>

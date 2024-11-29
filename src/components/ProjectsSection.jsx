@@ -42,7 +42,7 @@ const ProjectsSection = () => {
       <div className="descriptions-1 mx-auto w-2/3 font-gunterz text-footerBg font-thin text-[30px] leading-[45px] text-center my-10">
         <p dangerouslySetInnerHTML={{ __html: projectsDescription1 }} />
         <br />
-        <span className="text-5xl">HİKAYENİZİ GELEÇEĞE TAŞIYORUZ</span>
+        <span className="text-[40px]">HİKAYENİZİ GELEÇEĞE TAŞIYORUZ</span>
       </div>
 
       {/* TODO: Do Later */}

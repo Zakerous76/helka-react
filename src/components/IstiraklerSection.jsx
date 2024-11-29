@@ -33,9 +33,9 @@ const IstiraklerSection = () => {
                   <img
                     src={istirak.image}
                     alt={`${istirak.title} Image`}
-                    className={`max-w-[408px] ${
+                    className={`max-w-[520px] ${
                       index % 2 === 1
-                        ? "pr-[50px] pl-[12px] pb-[15px] pt-[19px]"
+                        ? "pr-[50px] pl-[12px] pb-[12px] pt-[10px]"
                         : "pl-[55px] pr-[8px] pb-[10px] pt-[10px]"
                     }  `}
                   />
