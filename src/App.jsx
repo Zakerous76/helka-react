@@ -17,25 +17,6 @@ const App = () => (
       <Navbar />
     </div>
     <Routes>
-      {/* Static Home Page */}
-      <Route
-        path="/"
-        element={
-          <>
-            <div className={`${styles.flexCenter} w-full`}>
-              <Hero />
-            </div>
-
-            <div className={`${styles.flexCenter} w-full`}>
-              <ProjectsSection />
-            </div>
-
-            <div className={`bg-helkaBgWhite ${styles.flexCenter} w-full`}>
-              <IstiraklerSection />
-            </div>
-          </>
-        }
-      />
       {/* Other Routes */}
       <Route path="/" element={<Home />} />
       <Route path="/kurumsal" element={<Kurumsal />} />

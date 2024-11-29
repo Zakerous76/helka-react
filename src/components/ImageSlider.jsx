@@ -4,24 +4,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function ImageSlider({ projectsSliderImages }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [direction, setDirection] = useState(""); // Track slide direction
+  const [direction] = useState(""); // Track slide direction
 
   const nextSlide = useCallback(() => {
-    setDirection("right");
     setCurrentIndex((prevIndex) =>
       prevIndex === projectsSliderImages.length - 1 ? 0 : prevIndex + 1
     );
   }, []);
 
   const prevSlide = () => {
-    setDirection("left");
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? projectsSliderImages.length - 1 : prevIndex - 1
     );
   };
 
   const goToSlide = (index) => {
-    setDirection(index > currentIndex ? "right" : "left");
     setCurrentIndex(index);
   };
 
@@ -52,7 +49,7 @@ export default function ImageSlider({ projectsSliderImages }) {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className={`absolute w-full h-full object-cover${
+                className={`absolute w-full h-full object-cover ${
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 } transition-opacity duration-700`}
               />

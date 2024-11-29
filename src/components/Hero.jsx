@@ -1,7 +1,6 @@
 import React from "react";
-import { heroBg, heroSubtitle, heroTitle } from "../assets/images";
 
-const Hero = () => {
+const Hero = ({ heroBg, heroTitle, heroSubtitle }) => {
   return (
     <div className="w-screen relative h-screen">
       <div className="relative w-full h-full">

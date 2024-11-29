@@ -4,7 +4,7 @@ import { close, helkaHeaderLogo, menu } from "../assets/images";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("Anasayfa");
 
   const [toggle, setToggle] = useState(false);
 
@@ -22,7 +22,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`font-gunterz font-normal text-white cursor-pointer text-[16px] ${
-                index === navLinks.length - 1 ? "mr-10" : "mr-10"
+                index === navLinks.length - 1 ? "mr-12" : "mr-12"
               } ${
                 active === nav.title ? "bg-helkaBlue px-2 pt-1 rounded-lg" : ""
               }  hover:scale-125 hover:font-bold my-transition`}
@@ -50,12 +50,12 @@ const Navbar = () => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`font-gunterz font-medium cursor-pointer text-[16px] ${
+                  className={`font-gunterz font-medium cursor-pointer text-[16px] hover:scale-110 my-transition ${
                     active === nav.title ? "text-black" : "text-gray-400"
                   } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => setActive(nav.title)}
                 >
-                  <Link to={nav.link}>{nav.name}</Link>
+                  <Link to={nav.link}>{nav.title}</Link>
                 </li>
               ))}
             </ul>
