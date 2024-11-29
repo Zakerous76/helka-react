@@ -1,5 +1,5 @@
 import React from "react";
-import { istiraklerSectionContainers } from "../assets/images";
+import { istirakSectionImgsBg } from "../assets/images";
 import { istirakler } from "../constants";
 import styles from "../styles";
 
@@ -13,7 +13,7 @@ const IstiraklerSection = () => {
           >
             İŞTİRAKLERİMİZ
           </h1>
-          <img src={istiraklerSectionContainers} alt="" />
+          <img src={istirakSectionImgsBg} alt="" />
           <div className="texts-images flex flex-col absolute top-[200px]">
             {istirakler.map((istirak, index) => (
               <div
@@ -22,7 +22,7 @@ const IstiraklerSection = () => {
                   index % 2 === 1 ? "flex-row-reverse" : "flex-row text-right"
                 } z-10`}
               >
-                <div className="texts w-1/2">
+                <div className="texts w-1/2 ">
                   <h2
                     className={`text-${istirak.title_color} font-bold text-[28px]`}
                   >
@@ -36,11 +36,11 @@ const IstiraklerSection = () => {
                   <img
                     src={istirak.image}
                     alt={`${istirak.title} Image`}
-                    className={`max-w-[525px] w-full ${
+                    className={`llg:max-w-[1000px] sm:max-w-[525px] w-full ${
                       index % 2 === 1
                         ? "pr-[50px] pl-[12px] pb-[12px] pt-[10px]"
                         : "pl-[55px] pr-[8px] pb-[10px] pt-[10px]"
-                    }  `}
+                    }  opacity-0`}
                   />
                 </div>
               </div>

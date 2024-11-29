@@ -22,7 +22,6 @@ import {
   heroBg,
   heroTitle,
   heroSubtitle,
-  istiraklerSectionContainers,
   mapIllustration,
   igBanner,
   ig1,

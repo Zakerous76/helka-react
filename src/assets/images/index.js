@@ -33,12 +33,12 @@ import helkaHeaderLogo from "./helka/helka-header-logo.svg";
 import heroBg from "./helka/hero-bg.webp";
 import heroTitle from "./helka/hero-title.svg";
 import heroSubtitle from "./helka/hero-subtitle.svg";
-import istiraklerSectionContainers from "./helka/istirakler-section-containers.svg";
 import mapIllustration from "./helka/map-icon.webp";
 import igBanner from "./helka/ig-banner.png";
 import ig1 from "./helka/ig-1.png";
 import ig2 from "./helka/ig-2.png";
 import ig3 from "./helka/ig-3.png";
+import istirakSectionImgsBg from "./helka/istirak-section-imgs-bg.png";
 import slideImgContainer from "./helka/slide-img-container.svg";
 import tamamDevamIcon from "./helka/tamam-devam-icon.svg";
 import tamamIcon from "./helka/tamam-icon.svg";
@@ -60,6 +60,11 @@ import kurumsalMisyonIcon from "./helka/kurumsal-misyon-icon.svg";
 import kurumsalVizyonIcon from "./helka/kurumsal-vizyon-icon.svg";
 import hakkimizdaImg1 from "./helka/hakkimizda-img-1.png";
 import hakkimizdaImg2 from "./helka/hakkimizda-img-2.png";
+
+// İştiraklerimiz
+import istiraklerimizHeroBg from "./helka/istiraklerimiz-hero-bg.png";
+import istiraklerimizHeroTitle from "./helka/istiraklerimiz-hero-title.svg";
+import istiraklerimizHeroSubtitle from "./helka/istiraklerimiz-hero-subtitle.svg";
 
 export {
   airbnb,
@@ -96,7 +101,6 @@ export {
   heroBg,
   heroTitle,
   heroSubtitle,
-  istiraklerSectionContainers,
   mapIllustration,
   igBanner,
   ig1,
@@ -121,5 +125,9 @@ export {
   kurumsalVizyonIcon,
   hakkimizdaImg1,
   hakkimizdaImg2,
+  istirakSectionImgsBg,
+  istiraklerimizHeroBg,
+  istiraklerimizHeroTitle,
+  istiraklerimizHeroSubtitle,
   // Add more SVGs here if needed...
 };
