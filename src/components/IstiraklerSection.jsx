@@ -1,13 +1,16 @@
 import React from "react";
 import { istiraklerSectionContainers } from "../assets/images";
 import { istirakler } from "../constants";
+import styles from "../styles";
 
 const IstiraklerSection = () => {
   return (
     <div className="istirakler-section">
       <div className="white-bg bg-white rounded-[90px] min-h-72 px-24 mx-32 shadow-xl flex flex-col justify-center items-center mb-40">
-        <div className="background-grid relative pb-16">
-          <h1 className="title font-gunterz font-bold text-7xl text-helkaDarkBrown p-16 relative">
+        <div className="background-grid relative pb-16 h-auto">
+          <h1
+            className={`title font-gunterz font-bold text-7xl text-helkaDarkBrown p-16 ${styles.flexCenter}`}
+          >
             İŞTİRAKLERİMİZ
           </h1>
           <img src={istiraklerSectionContainers} alt="" />
@@ -17,7 +20,7 @@ const IstiraklerSection = () => {
                 key={index}
                 className={`font-gunterz transition-all duration-300 ease-in-out flex gap-2 items-center mb-[50px] ${
                   index % 2 === 1 ? "flex-row-reverse" : "flex-row text-right"
-                }`}
+                } z-10`}
               >
                 <div className="texts w-1/2">
                   <h2
@@ -33,7 +36,7 @@ const IstiraklerSection = () => {
                   <img
                     src={istirak.image}
                     alt={`${istirak.title} Image`}
-                    className={`max-w-[520px] ${
+                    className={`max-w-[525px] w-full ${
                       index % 2 === 1
                         ? "pr-[50px] pl-[12px] pb-[12px] pt-[10px]"
                         : "pl-[55px] pr-[8px] pb-[10px] pt-[10px]"

@@ -52,6 +52,15 @@ import helkaBetonImg from "./helka/helka-beton.webp";
 import slide1 from "./helka/slide-1.jpg";
 import slide2 from "./helka/slide-2.jpg";
 
+// Kurumsal
+import kurumsalHeroBg from "./helka/kurumsal-hero-bg.png";
+import kurumsalHeroTitle from "./helka/kurumsal-hero-title.svg";
+import kurumsalHeroSubtitle from "./helka/kurumsal-hero-subtitle.svg";
+import kurumsalMisyonIcon from "./helka/kurumsal-misyon-icon.svg";
+import kurumsalVizyonIcon from "./helka/kurumsal-vizyon-icon.svg";
+import hakkimizdaImg1 from "./helka/hakkimizda-img-1.png";
+import hakkimizdaImg2 from "./helka/hakkimizda-img-2.png";
+
 export {
   airbnb,
   bill,
@@ -105,5 +114,12 @@ export {
   helkaBetonImg,
   slide1,
   slide2,
+  kurumsalHeroBg,
+  kurumsalHeroTitle,
+  kurumsalHeroSubtitle,
+  kurumsalMisyonIcon,
+  kurumsalVizyonIcon,
+  hakkimizdaImg1,
+  hakkimizdaImg2,
   // Add more SVGs here if needed...
 };

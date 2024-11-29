@@ -34,6 +34,8 @@ import {
   helkaMadenImg,
   slide1,
   slide2,
+  hakkimizdaImg1,
+  hakkimizdaImg2,
 } from "../assets/images";
 
 export const motto = "Geleceğe Yön Veren Projeler";
@@ -237,5 +239,20 @@ export const projectsSliderImages = [
     src: slide2,
     alt: "Project 2",
     title: "HELKA BİNA",
+  },
+];
+
+export const kurumsalContent = [
+  {
+    id: "kurumsal-1",
+    title: "Her proje, geleceğe değer katan birer yaşam alanı...",
+    image: hakkimizdaImg1,
+    text: "1960’lı yıllarda şu an hala sürdürmekte olduğumuz inşaat ve taahhüt faaliyetlerini gerçekleştirmek üzere yola çıktık. Doğru iş, güvenilir ve ahlaki ticari hayat anlayışımız bize yarım asrı aşkınlık tecrübe kazandırdı.  Bugün ise, üçüncü nesil aile üyelerinin de dahil olduğu kurumsal bir yapı ve nitelikli insan kaynağımız ile Helka markasını istikrarlı olarak büyütüyoruz.",
+  },
+  {
+    id: "kurumsal-2",
+    title: "",
+    image: hakkimizdaImg2,
+    text: "Değişen dünya ile birlikte yenilenen konut anlayışında Helka markası olarak çeşitli tematik projeleri hayata geçiriyor, ticari ve yaşam alanları üretiyoruz. İnsan hayatına konfor katacak, çevreye duyarlı, estetik yaşam alanları kurmayı kurumsal vizyon olarak  elirledik. Projelerimizi sürdürürken insani ve ahlaki değerlerimizi ön planda tutuyoruz. Üretilen her projenin, her paydaşımız için mutluluk ve gurur nedeni olmasını sağlamak Helka‘nın ana hedeflerindendir. Bu temel amaçla birlikte Helka, sektörde pek çok yenilik getiren uygulamaların mimarı, şehre değer katan projelerin arkasındaki isim oldu.",
   },
 ];
