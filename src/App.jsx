@@ -1,7 +1,5 @@
 import styles from "./styles";
 import { Footer, Navbar, Hero } from "./components";
-import ProjectsSection from "./components/ProjectsSection";
-import IstiraklerSection from "./components/IstiraklerSection";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Kurumsal from "./pages/Kurumsal";
