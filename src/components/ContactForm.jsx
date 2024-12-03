@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { MapContainer, TileLayer, Marker, ZoomControl } from "react-leaflet";
-import { Star, MapPin } from "lucide-react";
+import { Star } from "lucide-react";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import { useFormLogic } from "../database/formLogic";
 
 // Fix for default marker icon in react-leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -16,50 +17,8 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Here you would typically make your API call to submit the form
-      console.log("Form submitted:", formData);
-
-      setSubmitStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-    } catch (error) {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-      setTimeout(() => setSubmitStatus(null), 3000);
-    }
-  };
+  const { formData, isSubmitting, submitStatus, handleChange, handleSubmit } =
+    useFormLogic();
 
   const position = [39.9334, 32.8597]; // Ankara coordinates
 
