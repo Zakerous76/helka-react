@@ -255,14 +255,25 @@ export const kurumsalContent = [
     text: "Değişen dünya ile birlikte yenilenen konut anlayışında Helka markası olarak çeşitli tematik projeleri hayata geçiriyor, ticari ve yaşam alanları üretiyoruz. İnsan hayatına konfor katacak, çevreye duyarlı, estetik yaşam alanları kurmayı kurumsal vizyon olarak  elirledik. Projelerimizi sürdürürken insani ve ahlaki değerlerimizi ön planda tutuyoruz. Üretilen her projenin, her paydaşımız için mutluluk ve gurur nedeni olmasını sağlamak Helka‘nın ana hedeflerindendir. Bu temel amaçla birlikte Helka, sektörde pek çok yenilik getiren uygulamaların mimarı, şehre değer katan projelerin arkasındaki isim oldu.",
   },
 ];
+import { icons } from "lucide-react";
 
-export const projelerKategorileri = [
+export const contactInfo = [
   {
-    id: "devam-eden",
-    title: "Devam Eden Projeler",
+    id: "adres",
+    title: "Ofisimizi Ziyaret Edin",
+    content: "Ankara/Çankaya Helka İnşaat",
+    icon: icons.MapPinHouse,
   },
   {
-    id: "tamamlanan-eden",
-    title: "Tamamlanan Projeler",
+    id: "email",
+    title: "Email Adresimiz",
+    content: "info@helkainsaat.com",
+    icon: icons.Mail,
+  },
+  {
+    id: "telefon",
+    title: "Bize Ulaşın",
+    content: "+1-2353-4352-555 <br> +90 (541) 258 360",
+    icon: icons.PhoneIncoming,
   },
 ];

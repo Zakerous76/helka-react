@@ -15,6 +15,7 @@ import DevamEdenProjeler from "./pages/DevamEdenProjeler";
 import TamamlananProjeler from "./pages/TamamlananProjeler";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Iletisim from "./pages/Iletisim";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -33,6 +34,7 @@ const AnimatedRoutes = () => {
           />
           <Route path="/istiraklerimiz" element={<Istiraklerimiz />} />
           <Route path="/medya" element={<Medya />} />
+          <Route path="/iletisim" element={<Iletisim />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
