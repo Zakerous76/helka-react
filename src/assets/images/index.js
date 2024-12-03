@@ -66,6 +66,11 @@ import istiraklerimizHeroBg from "./helka/istiraklerimiz-hero-bg.jpg";
 import istiraklerimizHeroTitle from "./helka/istiraklerimiz-hero-title.svg";
 import istiraklerimizHeroSubtitle from "./helka/istiraklerimiz-hero-subtitle.svg";
 
+// Projeler
+import projelerHeroBg from "./helka/projeler-hero-bg.jpg";
+import projelerHeroTitle from "./helka/projeler-hero-title.svg";
+import projelerHeroSubtitle from "./helka/projeler-hero-subtitle.svg";
+
 export {
   airbnb,
   bill,
@@ -129,5 +134,8 @@ export {
   istiraklerimizHeroBg,
   istiraklerimizHeroTitle,
   istiraklerimizHeroSubtitle,
+  projelerHeroBg,
+  projelerHeroTitle,
+  projelerHeroSubtitle,
   // Add more SVGs here if needed...
 };
