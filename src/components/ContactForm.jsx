@@ -6,6 +6,7 @@ import L from "leaflet";
 import { useFormLogic } from "../database/formLogic";
 
 // TODO: implement a server
+// Without the server, the website wont work properly
 
 // Fix for default marker icon in react-leaflet
 delete L.Icon.Default.prototype._getIconUrl;
