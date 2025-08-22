@@ -3,6 +3,12 @@
 
 This repository contains a partially completed landing page for [Helka](https://www.helka.com.tr/en). The project was originally intended to create a modern, interactive website for the company, but the project was later discontinued.  
 
+---
+
+![screencapture-localhost-5173-2025-08-22-03_25_59](https://github.com/user-attachments/assets/718f6cff-f0d4-4ffa-86a9-2b322ed4db94)
+
+---
+
 ## Technologies Used
 
 - **React**  – Frontend library for building UI components  
@@ -51,8 +57,5 @@ This project is shared for **portfolio purposes**. The landing page is not compl
 
 Made with ❤️ using React
 
-
-
-<img width="1920" height="1784" alt="screencapture-localhost-5173-2025-08-22-03_25_59" src="https://github.com/user-attachments/assets/1aa2cdc8-ccac-40a2-a735-c19e0279cb58" />
 
 
