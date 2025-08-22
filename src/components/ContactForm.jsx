@@ -1,15 +1,15 @@
-import React from "react";
-import { MapContainer, TileLayer, Marker, ZoomControl } from "react-leaflet";
-import { Star } from "lucide-react";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import { useFormLogic } from "../database/formLogic";
+/* eslint-disable no-constant-binary-expression */
+import { MapContainer, TileLayer, Marker, ZoomControl } from "react-leaflet"
+import { Star } from "lucide-react"
+import "leaflet/dist/leaflet.css"
+import L from "leaflet"
+// import { useFormLogic } from "../database/formLogic";
 
 // TODO: implement a server
 // Without the server, the website wont work properly
 
 // Fix for default marker icon in react-leaflet
-delete L.Icon.Default.prototype._getIconUrl;
+delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png",
@@ -17,13 +17,13 @@ L.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
   shadowUrl:
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
-});
+})
 
 export default function ContactForm() {
-  const { formData, isSubmitting, submitStatus, handleChange, handleSubmit } =
-    useFormLogic();
+  // const { formData, isSubmitting, submitStatus, handleChange, handleSubmit } =
+  //   useFormLogic();
 
-  const position = [39.9334, 32.8597]; // Ankara coordinates
+  const position = [39.9334, 32.8597] // Ankara coordinates
 
   return (
     <div className="container mx-auto px-4 py-8 font-poppins">
@@ -35,13 +35,13 @@ export default function ContactForm() {
             için hazır!
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6 text-xs">
+          <form onSubmit={null} className="space-y-6 text-xs">
             <div className="grid md:grid-cols-2 gap-6">
               <input
                 type="text"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
+                value={null}
+                onChange={handlenull}
                 placeholder="İsim"
                 required
                 className="w-full px-4 py-2 bg-gray-50 border border-gray-200 focus:outline-none focus:border-gray-400 h-12"
@@ -49,8 +49,8 @@ export default function ContactForm() {
               <input
                 type="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+                value={null}
+                onChange={null}
                 placeholder="Email"
                 required
                 className="w-full px-4 py-2 bg-gray-50 border border-gray-200 focus:outline-none focus:border-gray-400 h-12"
@@ -61,8 +61,8 @@ export default function ContactForm() {
               <input
                 type="tel"
                 name="phone"
-                value={formData.phone}
-                onChange={handleChange}
+                value={null}
+                onChange={null}
                 placeholder="Telefon"
                 required
                 className="w-full px-4 py-2 bg-gray-50 border border-gray-200 focus:outline-none focus:border-gray-400 h-12"
@@ -70,8 +70,8 @@ export default function ContactForm() {
               <input
                 type="text"
                 name="subject"
-                value={formData.subject}
-                onChange={handleChange}
+                value={null}
+                onChange={null}
                 placeholder="Konu"
                 required
                 className="w-full px-4 py-2 bg-gray-50 border border-gray-200 focus:outline-none focus:border-gray-400 h-12"
@@ -80,8 +80,8 @@ export default function ContactForm() {
 
             <textarea
               name="message"
-              value={formData.message}
-              onChange={handleChange}
+              value={null}
+              onChange={null}
               placeholder="Mesajını"
               required
               rows="6"
@@ -90,16 +90,16 @@ export default function ContactForm() {
 
             <button
               type="submit"
-              disabled={isSubmitting}
+              disabled={null}
               className="bg-[#8B6D5C] text-white px-8 py-3 hover:bg-[#7A5E4D] transition-colors disabled:opacity-50"
             >
-              {isSubmitting ? "Gönderiliyor..." : "Gönder"}
+              {true ? "Gönderiliyor..." : "Gönder"}
             </button>
 
-            {submitStatus === "success" && (
+            {null === "success" && (
               <p className="text-green-600">Mesajınız başarıyla gönderildi!</p>
             )}
-            {submitStatus === "error" && (
+            {null === "error" && (
               <p className="text-red-600">
                 Bir hata oluştu. Lütfen tekrar deneyin.
               </p>
@@ -141,5 +141,5 @@ export default function ContactForm() {
         </div>
       </div>
     </div>
-  );
+  )
 }
