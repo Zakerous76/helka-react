@@ -51,5 +51,8 @@ This project is shared for **portfolio purposes**. The landing page is not compl
 
 Made with ❤️ using React
 
-```
+
+
+<img width="1920" height="1784" alt="screencapture-localhost-5173-2025-08-22-03_25_59" src="https://github.com/user-attachments/assets/1aa2cdc8-ccac-40a2-a735-c19e0279cb58" />
+
 
